@@ -264,11 +264,19 @@ nav {
   transition: width 0.5s var(--ease);
 }
 /* Estado padrão (sobre o hero escuro): logo claro visível, preto oculto */
-.brand-dark { display: none; }
+.brand-dark {
+  display: none;
+}
 /* Ao rolar (fundo claro): troca para o logo preto */
-nav.scrolled .brand-light { display: none; }
-nav.scrolled .brand-dark { display: block; }
-nav.scrolled .brand-logo { width: clamp(140px, 16vw, 190px); }
+nav.scrolled .brand-light {
+  display: none;
+}
+nav.scrolled .brand-dark {
+  display: block;
+}
+nav.scrolled .brand-logo {
+  width: clamp(140px, 16vw, 190px);
+}
 
 nav.scrolled {
   background: rgba(244, 240, 236, 0.9);
@@ -1090,14 +1098,14 @@ footer::before {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  gap: clamp(2rem, 6vw, 5rem);
+  gap: clamp(2rem, 6vw, 6rem);
 }
 .foot-logo-col {
   display: flex;
   justify-content: center;
 }
 .foot-logo {
-  width: min(220px, 70%);
+  width: min(320px, 80%);
   height: auto;
 }
 .foot-info-col {
